@@ -8,7 +8,7 @@ How To Use This
 ---------------
 
 1. Run `pip install -r requirements.txt` to install dependencies
-2. Run `python3 wsgi.py`. This calls app/main.py. main.py contains a majority of the code.
+2. Run `python3 wsgi.py`. This calls `app/main.py`. `main.py` contains a majority of the code.
 3. Navigate to http://127.0.0.1:5000/ in your browser to use the transaction system
 
 If you are using the one hosted on the Heroku server, please ignore the above steps and use the link.
