@@ -57,6 +57,16 @@ def create():
             if not request.form['name']:
                 return render_template('home.html', message="Enter a name!" )
             currentSpot= 1
+            emailAddress=None
+            name=None
+            startImage=[]
+            for i in range(7):
+                startImage.append("/static/img/transparent.png")
+            startImage[6]="/static/img/finalImage.png"
+            startImage[0]="/static/img/robotimage.png"
+            feedbackValue=[]
+            for i in range(7):
+                feedbackValue.append(0)
             emailAddress=request.form['emailaddress']
             name=request.form['name']
             for doc in todo_ref.stream():
